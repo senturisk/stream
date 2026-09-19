@@ -1,0 +1,6 @@
+{
+  "name": "Sen Stream",
+  "description": "Native-like multi-platform live streaming software by Senturisk featuring Material You design, ultra-low latency compositor, and simultaneous streaming to YouTube, Twitch, Facebook, Instagram, and more.",
+  "requestFramePermissions": ["camera", "microphone", "display-capture"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-roboto-flex: 'Roboto Flex', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    
+    /* Material You Dark Palette (Sapphire default) */
+    --md-sys-color-primary: #a8c7fa;
+    --md-sys-color-on-primary: #003062;
+    --md-sys-color-primary-container: #00468a;
+    --md-sys-color-on-primary-container: #d6e3ff;
+    
+    --md-sys-color-surface: #0b0f17;
+    --md-sys-color-surface-dim: #070a10;
+    --md-sys-color-surface-container-lowest: #0c101a;
+    --md-sys-color-surface-container-low: #131825;
+    --md-sys-color-surface-container: #1a2030;
+    --md-sys-color-surface-container-high: #22293c;
+    --md-sys-color-surface-container-highest: #2b3349;
+    
+    --md-sys-color-on-surface: #e2e8f0;
+    --md-sys-color-on-surface-variant: #94a3b8;
+    --md-sys-color-outline: #475569;
+    --md-sys-color-outline-variant: #334155;
+    
+    --md-sys-color-secondary: #c2c9db;
+    --md-sys-color-secondary-container: #3f4757;
+    --md-sys-color-tertiary: #dfbfe4;
+    
+    --md-sys-color-error: #ffb4ab;
+    --md-sys-color-error-container: #93000a;
+  }
+
+  body {
+    font-family: var(--font-roboto-flex);
+    background-color: var(--md-sys-color-surface-dim);
+    color: var(--md-sys-color-on-surface);
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
+
+/* Material You Elevation Tokens */
+.md3-elevation-1 {
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.25), 0px 1px 2px 0px rgba(0, 0, 0, 0.35);
+}
+
+.md3-elevation-2 {
+  box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.35), 0px 1px 2px 0px rgba(0, 0, 0, 0.45);
+}
+
+.md3-elevation-3 {
+  box-shadow: 0px 4px 12px 3px rgba(0, 0, 0, 0.45), 0px 2px 4px 0px rgba(0, 0, 0, 0.55);
+}
+
+/* Material 3 Styled Sliders */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: rgba(255, 255, 255, 0.12);
+  height: 6px;
+  border-radius: 9999px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -5px;
+  background-color: #a8c7fa;
+  height: 16px;
+  width: 16px;
+  border-radius: 9999px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.15s ease;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+  transform: scale(1.2);
+}
+
+/* Custom Scrollbar for Layers & Docks */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
